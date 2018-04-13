@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barter</title>
+ <meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link rel="stylesheet" href="build/css/intlTelInput.css">
+    <link rel="stylesheet" href="build/css/demo.css">
+</head>
+
+<body>
+	<div class="container">
+	<div class="row">
+	<div class="col-md-6 one" style="padding-top: 130px; padding-left: 100px;">
+		<div class="forms">
+    <form action="https://www.w3schools.com/action_page.php">
+    	<legend>Register</legend>
+    	<p class="text">Barter makes online payments safe and easy, with a new virtual card for each place you pay online.</p>
+    	<input type="text" name="Firstname" placeholder="First Name" size="60"><br>
+        <input type="text" name="lastname" placeholder="Last Name" size="60"><br>
+        <input type="email" name="email" placeholder="Email address" size="60"><br>
+        <input type="password" name="psw" placeholder="Password" maxlength="8" size="60" ><br>
+        <div>
+			<input id="phone" type="tel"  name="tel" placeholder="8138903406" maxlength="10" size="60">
+	   </div>
+
+        <input type="submit" value="REGISTER ACCOUNT" style="width: 200px; height: 48px; opacity: 80%;">
+    </form>
+        </div>
+    </div>
+
+    <div class="col-md-3 two" style="padding-top: 175px;">
+    <p class="text">You can sign in using your accounts on these sites:</p>
+    <div class="col2">
+    <input type="submit" value="FACEBOOK" style="width: 230px; height: 48px; opacity: 80%; background-color: #3B5998;">
+    <input type="submit" value="GOOGLE" style="width: 230px; height: 48px; opacity: 80%; background-color: #DD4B39;">
+
+
+
+<!-- Load jQuery from CDN so can run demo immediately -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="build/js/intlTelInput.js"></script>
+  <script>
+    $("#phone").intlTelInput({
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: "body",
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "build/js/utils.js"
+    });
+  </script>
+</body>
+</html>

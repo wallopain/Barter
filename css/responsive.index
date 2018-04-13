@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width, initial-scale=1.0">
+	 
+</head>
+<body> 
+	<form action="https://www.w3schools.com/action_page.php">
+		First name:<br>
+		<input type="text" name="firstname" value="Onifade" size="30" maxlength="5"><br>
+		last name:<br>
+		<input type="text" name="lastname" value="Michael"><br>
+		<input type="radio" name="Gender" value="male" checked> Male<br>
+		<input type="radio" name="Gender" value="female"> Female<br>
+		<input type="radio" name="Gender" value="Hermaphrodite"> Other
+		<input type="submit" value="submit">
+		<fieldset>
+			<legend>Personal Information</legend>
+			First name:<br>
+			<input type="text" name="firstname" value="mickey"><br>
+			Last name:<br>
+			<input type="text" name="lastname" value="mouse"><br><br>
+			<input type="submit" value="submit">
+		</fieldset>
+
+<fieldset>
+		<select name="Cars" multiple>
+			<option value="volvo">volvo</option>
+			<option value="volvo">volvo</option>
+			<option value="volvo">volvo</option>
+			<option value="volvo">volvo</option>
+		</select><br>
+		<textarea name="message" rows="10" cols="30" style="resize: none; width: 150px; height: 500px;">
+The cat was playing
+		</textarea>
+	</fieldset>
+	<button type="button" onclick="alert('hello world!')">Click Me!</button><br>
+	<input list="browsers">
+	<datalist id="browsers">
+		<option value="Internet Explorer">
+		<option value="Firefox">
+		<option value="chrome">
+		<option value="opera">
+		<option value="safari">
+
+		
+	</datalist>
+
+	</form>
+</body>
+</html>
